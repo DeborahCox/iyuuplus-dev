@@ -1,8 +1,8 @@
 name: 构建IYUUPlus-dev-nodb镜像
 on:
   workflow_dispatch:
-  schedule:
-    - cron: "0 4 * * 5"
+  #schedule:
+  #  - cron: "0 4 * * 5"
 
 jobs:
   build:
