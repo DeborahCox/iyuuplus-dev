@@ -7,17 +7,17 @@ use Iyuu\SiteManager\Frameworks\NexusPhp\HasCookie;
 use Iyuu\SiteManager\Spider\Pagination;
 
 /**
- * beitai
+ * hspt
  * - 凭cookie解析HTML列表页
  */
-class CookieBeitai extends BaseCookie
+class CookieHspt extends BaseCookie
 {
     use HasCookie, Pagination;
 
     /**
      * 站点名称
      */
-    public const SITE_NAME = 'beitai';
+    public const string SITE_NAME = 'hspt';
 
     /**
      * 是否调试当前站点
