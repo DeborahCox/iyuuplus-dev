@@ -8,14 +8,14 @@ use Iyuu\SiteManager\Contracts\ProcessorXml;
 use Iyuu\SiteManager\Frameworks\NexusPhp\HasRss;
 
 /**
- * beitai
+ * htpt
  */
-class DriverBeitai extends BaseDriver implements Processor, ProcessorXml
+class DriverHtpt extends BaseDriver implements Processor, ProcessorXml
 {
     use HasRss;
 
     /**
      * 站点名称
      */
-    public const SITE_NAME = 'beitai';
+    public const string SITE_NAME = 'htpt';
 }
