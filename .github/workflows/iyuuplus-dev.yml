@@ -36,8 +36,9 @@ jobs:
         id: buildx-cache
         with:
           path: /tmp/.buildx-cache
-          key: ${{ runner.os }}-buildx
-
+          key: ${{ runner.os }}-buildx-${{ github.sha }}
+          restore-keys: ${{ runner.os }}-buildx-
+          
       - name: Buildx
         uses: docker/build-push-action@v5
         with:
